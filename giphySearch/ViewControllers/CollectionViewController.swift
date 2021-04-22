@@ -10,7 +10,7 @@ import UIKit
 private let reuseIdentifier = "gifCell"
 
 class CollectionViewController: UICollectionViewController {
-    var searchBarz = UISearchBar()
+    var searchBar = UISearchBar()
     
     var network = GifNetwork()
     var gifs = [Gif]()
@@ -28,17 +28,17 @@ class CollectionViewController: UICollectionViewController {
         awakeFromNib()
         
         // Do any additional setup after loading the view.
-        searchBarz.sizeToFit()
-        navigationItem.titleView = searchBarz
+        searchBar.sizeToFit()
+        navigationItem.titleView = searchBar
     }
     
     func setup() {
         collectionView.delegate = self
         collectionView.dataSource = self
         //Search
-        searchBarz.searchTextField.delegate = self
-        searchBarz.searchTextField.placeholder = "Whats your favorite gif?"
-        searchBarz.returnKeyType = .search
+        searchBar.searchTextField.delegate = self
+        searchBar.searchTextField.placeholder = "Whats your favorite gif?"
+        searchBar.returnKeyType = .search
     }
 
     // MARK: UICollectionViewDataSource
@@ -76,3 +76,4 @@ extension CollectionViewController: UISearchTextFieldDelegate {
         return true
     }
 }
+
