@@ -45,7 +45,7 @@ class GifNetwork {
                components.queryItems = [
                    URLQueryItem(name: "api_key", value: apikey),
                    URLQueryItem(name: "q", value: searchTerm),
-                   URLQueryItem(name: "limit", value: "6") // Edit limit to display more gifs
+                   URLQueryItem(name: "limit", value: "21") // Edit limit to display more gifs
                ]
             return components.url!
         }
