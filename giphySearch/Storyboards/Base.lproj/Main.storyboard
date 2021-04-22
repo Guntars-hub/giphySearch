@@ -22,11 +22,6 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <searchBar key="backgroundView" contentMode="redraw" id="59s-oe-E7n" customClass="searchBar">
-                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" reuseIdentifier="gifCell" id="5Zx-iG-PFU" customClass="GifCell" customModule="giphySearch" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -43,9 +38,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="fqi-Rz-Wze"/>
-                    <connections>
-                        <outlet property="searchBar" destination="59s-oe-E7n" id="pQk-CV-3Vc"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1v9-6b-7tf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
