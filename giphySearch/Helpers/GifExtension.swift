@@ -21,18 +21,25 @@ extension UIImageView {
             }
         }
     }
-
+    
+    public func loadGif(url: String) {
+        DispatchQueue.global().async {
+            let image = UIImage.gif(url: url)
+            DispatchQueue.main.async {
+                self.image = image
+            }
+        }
+    }
 }
 
 extension UIImage {
-
+    
     public class func gif(data: Data) -> UIImage? {
         // Create source from data
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
             print("SwiftGif: Source for the image does not exist")
             return nil
         }
-
         return UIImage.animatedImageWithSource(source)
     }
 

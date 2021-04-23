@@ -23,9 +23,10 @@ class CollectionViewController: UICollectionViewController {
 
         // Register cell classes
             
-        collectionView!.register(UINib(nibName: "gifCell", bundle: nil), forCellWithReuseIdentifier: "gifCell")
+        if let collection = collectionView {
+            collection.register(UINib(nibName: "gifCell", bundle: nil), forCellWithReuseIdentifier: "gifCell")
+        }
         setup()
-        awakeFromNib()
         
         // Do any additional setup after loading the view.
         searchBar.sizeToFit()
@@ -44,16 +45,15 @@ class CollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
        gifs.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GifCell
     
-        cell.gif = gifs[indexPath.row]
+        cell.configure(gifs[indexPath.row])
+        print("configured cell at \(indexPath)")
         return cell
-    
     }
     
     func searchGifs(for searchText: String) {

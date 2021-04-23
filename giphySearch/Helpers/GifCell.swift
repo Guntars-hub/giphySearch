@@ -11,20 +11,18 @@ class GifCell: UICollectionViewCell {
     var gif: Gif?
     
     @IBOutlet var gifView: UIImageView!
-    /// ImageView to contain our gif.
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        // Make sure cell has a gif object
-        if let gif = gif {
-            // Grab gif from gif object and display it inside the imageview
-            let gifURL = gif.getGifURL()
-            gifView.image = UIImage.gif(url: gifURL)
-            gifView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
-            addSubview(gifView)
-        }
-    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    /// ImageView to contain our gif.
+    func configure(_: Gif?) {
+        if let gif = gif {
+            // Grab gif from gif object and display it inside the imageview
+            let gifURL = gif.getGifURL()
+            gifView.loadGif(url: gifURL)
+            gifView.frame = CGRect(origin: .zero, size: bounds.size)
+            addSubview(gifView)
+        }
     }
 }
