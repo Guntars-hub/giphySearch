@@ -8,7 +8,6 @@
 import UIKit
 class GifCell: UICollectionViewCell {
     /// Gif to be displayed.
-    var gif: Gif?
     
     @IBOutlet var gifView: UIImageView!
     
@@ -16,7 +15,7 @@ class GifCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     /// ImageView to contain our gif.
-    func configure(_: Gif?) {
+    func configure(gif: Gif?) {
         if let gif = gif {
             // Grab gif from gif object and display it inside the imageview
             let gifURL = gif.getGifURL()

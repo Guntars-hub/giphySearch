@@ -51,7 +51,7 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GifCell
     
-        cell.configure(gifs[indexPath.row])
+        cell.configure(gif: gifs[indexPath.row])
         print("configured cell at \(indexPath)")
         return cell
     }
