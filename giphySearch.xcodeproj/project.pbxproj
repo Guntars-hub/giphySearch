@@ -14,25 +14,6 @@
 		D094B69126296F3900A9FA68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D094B68F26296F3900A9FA68 /* Main.storyboard */; };
 		D094B69326296F3B00A9FA68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D094B69226296F3B00A9FA68 /* Assets.xcassets */; };
 		D094B69626296F3B00A9FA68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D094B69426296F3B00A9FA68 /* LaunchScreen.storyboard */; };
-		D094B6B926296FE100A9FA68 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6A526296FE100A9FA68 /* Icon-29.png */; };
-		D094B6BA26296FE100A9FA68 /* Icon-121.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6A626296FE100A9FA68 /* Icon-121.png */; };
-		D094B6BB26296FE100A9FA68 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6A726296FE100A9FA68 /* Icon-120.png */; };
-		D094B6BC26296FE100A9FA68 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6A826296FE100A9FA68 /* Icon-76.png */; };
-		D094B6BD26296FE100A9FA68 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6A926296FE100A9FA68 /* Icon-60.png */; };
-		D094B6BE26296FE100A9FA68 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AA26296FE100A9FA68 /* Icon-1024.png */; };
-		D094B6BF26296FE100A9FA68 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AB26296FE100A9FA68 /* Icon-152.png */; };
-		D094B6C026296FE100A9FA68 /* Icon-59.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AC26296FE100A9FA68 /* Icon-59.png */; };
-		D094B6C126296FE100A9FA68 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AD26296FE100A9FA68 /* Icon-180.png */; };
-		D094B6C226296FE100A9FA68 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AE26296FE100A9FA68 /* Icon-58.png */; };
-		D094B6C326296FE100A9FA68 /* Icon-42.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6AF26296FE100A9FA68 /* Icon-42.png */; };
-		D094B6C426296FE100A9FA68 /* Icon-81.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B026296FE100A9FA68 /* Icon-81.png */; };
-		D094B6C526296FE100A9FA68 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B126296FE100A9FA68 /* Icon-80.png */; };
-		D094B6C626296FE100A9FA68 /* Icon-41.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B226296FE100A9FA68 /* Icon-41.png */; };
-		D094B6C726296FE100A9FA68 /* Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B326296FE100A9FA68 /* Icon-167.png */; };
-		D094B6C826296FE100A9FA68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B426296FE100A9FA68 /* Icon-40.png */; };
-		D094B6C926296FE100A9FA68 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B526296FE100A9FA68 /* Icon-87.png */; };
-		D094B6CA26296FE100A9FA68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B626296FE100A9FA68 /* Contents.json */; };
-		D094B6CB26296FE100A9FA68 /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = D094B6B726296FE100A9FA68 /* Icon-20.png */; };
 		D094B6CC26296FE100A9FA68 /* GifExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6B826296FE100A9FA68 /* GifExtension.swift */; };
 		D094B6D2262970C300A9FA68 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6D1262970C300A9FA68 /* GifCell.swift */; };
 		D094B6D52629718900A9FA68 /* GifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6D42629718900A9FA68 /* GifNetwork.swift */; };
@@ -49,25 +30,6 @@
 		D094B69226296F3B00A9FA68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D094B69526296F3B00A9FA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D094B69726296F3B00A9FA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D094B6A526296FE100A9FA68 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		D094B6A626296FE100A9FA68 /* Icon-121.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-121.png"; sourceTree = "<group>"; };
-		D094B6A726296FE100A9FA68 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		D094B6A826296FE100A9FA68 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		D094B6A926296FE100A9FA68 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		D094B6AA26296FE100A9FA68 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
-		D094B6AB26296FE100A9FA68 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		D094B6AC26296FE100A9FA68 /* Icon-59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-59.png"; sourceTree = "<group>"; };
-		D094B6AD26296FE100A9FA68 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
-		D094B6AE26296FE100A9FA68 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
-		D094B6AF26296FE100A9FA68 /* Icon-42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-42.png"; sourceTree = "<group>"; };
-		D094B6B026296FE100A9FA68 /* Icon-81.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-81.png"; sourceTree = "<group>"; };
-		D094B6B126296FE100A9FA68 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
-		D094B6B226296FE100A9FA68 /* Icon-41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-41.png"; sourceTree = "<group>"; };
-		D094B6B326296FE100A9FA68 /* Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-167.png"; sourceTree = "<group>"; };
-		D094B6B426296FE100A9FA68 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		D094B6B526296FE100A9FA68 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
-		D094B6B626296FE100A9FA68 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		D094B6B726296FE100A9FA68 /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-20.png"; sourceTree = "<group>"; };
 		D094B6B826296FE100A9FA68 /* GifExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifExtension.swift; sourceTree = "<group>"; };
 		D094B6D1262970C300A9FA68 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		D094B6D42629718900A9FA68 /* GifNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifNetwork.swift; sourceTree = "<group>"; };
@@ -109,7 +71,6 @@
 				D094B69E26296F4C00A9FA68 /* Storyboards */,
 				D094B6CE26296FE800A9FA68 /* Helpers */,
 				D094B69226296F3B00A9FA68 /* Assets.xcassets */,
-				D094B6A426296FE100A9FA68 /* AppIcon.appiconset */,
 				D094B69726296F3B00A9FA68 /* Info.plist */,
 			);
 			path = giphySearch;
@@ -142,32 +103,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		D094B6A426296FE100A9FA68 /* AppIcon.appiconset */ = {
-			isa = PBXGroup;
-			children = (
-				D094B6A526296FE100A9FA68 /* Icon-29.png */,
-				D094B6A626296FE100A9FA68 /* Icon-121.png */,
-				D094B6A726296FE100A9FA68 /* Icon-120.png */,
-				D094B6A826296FE100A9FA68 /* Icon-76.png */,
-				D094B6A926296FE100A9FA68 /* Icon-60.png */,
-				D094B6AA26296FE100A9FA68 /* Icon-1024.png */,
-				D094B6AB26296FE100A9FA68 /* Icon-152.png */,
-				D094B6AC26296FE100A9FA68 /* Icon-59.png */,
-				D094B6AD26296FE100A9FA68 /* Icon-180.png */,
-				D094B6AE26296FE100A9FA68 /* Icon-58.png */,
-				D094B6AF26296FE100A9FA68 /* Icon-42.png */,
-				D094B6B026296FE100A9FA68 /* Icon-81.png */,
-				D094B6B126296FE100A9FA68 /* Icon-80.png */,
-				D094B6B226296FE100A9FA68 /* Icon-41.png */,
-				D094B6B326296FE100A9FA68 /* Icon-167.png */,
-				D094B6B426296FE100A9FA68 /* Icon-40.png */,
-				D094B6B526296FE100A9FA68 /* Icon-87.png */,
-				D094B6B626296FE100A9FA68 /* Contents.json */,
-				D094B6B726296FE100A9FA68 /* Icon-20.png */,
-			);
-			path = AppIcon.appiconset;
-			sourceTree = "<group>";
-		};
 		D094B6CE26296FE800A9FA68 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +130,8 @@
 			dependencies = (
 			);
 			name = giphySearch;
+			packageProductDependencies = (
+			);
 			productName = giphySearch;
 			productReference = D094B68626296F3900A9FA68 /* giphySearch.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +159,8 @@
 				Base,
 			);
 			mainGroup = D094B67D26296F3900A9FA68;
+			packageReferences = (
+			);
 			productRefGroup = D094B68726296F3900A9FA68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,27 +177,8 @@
 			files = (
 				D094B69626296F3B00A9FA68 /* LaunchScreen.storyboard in Resources */,
 				D094B69326296F3B00A9FA68 /* Assets.xcassets in Resources */,
-				D094B6C326296FE100A9FA68 /* Icon-42.png in Resources */,
-				D094B6BD26296FE100A9FA68 /* Icon-60.png in Resources */,
-				D094B6BF26296FE100A9FA68 /* Icon-152.png in Resources */,
-				D094B6C426296FE100A9FA68 /* Icon-81.png in Resources */,
 				D094B69126296F3900A9FA68 /* Main.storyboard in Resources */,
 				D0150A40262FFE6D00A16525 /* gifCell.xib in Resources */,
-				D094B6C726296FE100A9FA68 /* Icon-167.png in Resources */,
-				D094B6C026296FE100A9FA68 /* Icon-59.png in Resources */,
-				D094B6BC26296FE100A9FA68 /* Icon-76.png in Resources */,
-				D094B6C626296FE100A9FA68 /* Icon-41.png in Resources */,
-				D094B6BA26296FE100A9FA68 /* Icon-121.png in Resources */,
-				D094B6BB26296FE100A9FA68 /* Icon-120.png in Resources */,
-				D094B6B926296FE100A9FA68 /* Icon-29.png in Resources */,
-				D094B6CB26296FE100A9FA68 /* Icon-20.png in Resources */,
-				D094B6C526296FE100A9FA68 /* Icon-80.png in Resources */,
-				D094B6C126296FE100A9FA68 /* Icon-180.png in Resources */,
-				D094B6C226296FE100A9FA68 /* Icon-58.png in Resources */,
-				D094B6BE26296FE100A9FA68 /* Icon-1024.png in Resources */,
-				D094B6C826296FE100A9FA68 /* Icon-40.png in Resources */,
-				D094B6C926296FE100A9FA68 /* Icon-87.png in Resources */,
-				D094B6CA26296FE100A9FA68 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +340,7 @@
 		D094B69B26296F3B00A9FA68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = giphySearch/Info.plist;
@@ -438,7 +358,7 @@
 		D094B69C26296F3B00A9FA68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = giphySearch/Info.plist;

@@ -13,7 +13,7 @@ class GifNetwork {
     -Parameter searchTerm: What  we should query gifs of.
     -Returns: Optional array of gifs
     */
-    func fetchGifs(searchTerm: String, completion: @escaping (_ response: GifArray?) -> Void) {
+    func fetchGifs(pagination: Bool = false, searchTerm: String, completion: @escaping (_ response: GifArray?) -> Void) {
         // Create a GET url request
         let url = urlBuilder(searchTerm: searchTerm)
         var request = URLRequest(url: url)
@@ -45,8 +45,9 @@ class GifNetwork {
                components.queryItems = [
                    URLQueryItem(name: "api_key", value: apikey),
                    URLQueryItem(name: "q", value: searchTerm),
-                   //URLQueryItem(name: "limit", value: "21") // Edit limit to display more gifs
+                   URLQueryItem(name: "limit", value: "21") // Edit limit to display more gifs
                ]
             return components.url!
         }
 }
+

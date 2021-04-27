@@ -12,22 +12,20 @@ private let reuseIdentifier = "gifCell"
 class CollectionViewController: UICollectionViewController {
     var searchBar = UISearchBar()
     
+    var fetchingMore = false
+    
     var network = GifNetwork()
     var gifs = [Gif]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        //self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-            
-        if let collection = collectionView {
-            collection.register(UINib(nibName: "gifCell", bundle: nil), forCellWithReuseIdentifier: "gifCell")
-        }
+        collectionView.register(UINib(nibName: "gifCell", bundle: nil), forCellWithReuseIdentifier: "gifCell")
         setup()
-        
         // Do any additional setup after loading the view.
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
@@ -41,20 +39,21 @@ class CollectionViewController: UICollectionViewController {
         searchBar.searchTextField.placeholder = "Whats your favorite gif?"
         searchBar.returnKeyType = .search
     }
-
+    
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        gifs.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GifCell
     
         cell.configure(gif: gifs[indexPath.row])
-        print("configured cell at \(indexPath)")
-        return cell
-    }
+            print("configured cell at \(indexPath)")
+            return cell
+         }
+
     
     func searchGifs(for searchText: String) {
         network.fetchGifs(searchTerm: searchText) { gifArray in
@@ -63,6 +62,27 @@ class CollectionViewController: UICollectionViewController {
                 self.collectionView.reloadData()
             }
         }
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        print("\(offsetY), \(contentHeight)")
+        
+        if offsetY > contentHeight - scrollView.frame.height {
+            if !fetchingMore {
+                beginBatchFetch(gifs)
+            }
+        }
+    }
+    
+    func beginBatchFetch(_: [Gif]) {
+        fetchingMore = true
+        let newItems = self.gifs
+        self.gifs.append(contentsOf: newItems)
+        
+        self.fetchingMore = false
+        self.collectionView.reloadData()
     }
 }
 
@@ -76,4 +96,7 @@ extension CollectionViewController: UISearchTextFieldDelegate {
         return true
     }
 }
+
+
+
 
