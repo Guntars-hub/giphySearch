@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		D094B6D2262970C300A9FA68 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6D1262970C300A9FA68 /* GifCell.swift */; };
 		D094B6D52629718900A9FA68 /* GifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6D42629718900A9FA68 /* GifNetwork.swift */; };
 		D094B6D8262972F500A9FA68 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094B6D7262972F500A9FA68 /* Gif.swift */; };
+		D0E78C192639459B00A851B5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D0E78C182639459B00A851B5 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E78C192639459B00A851B5 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +133,7 @@
 			);
 			name = giphySearch;
 			packageProductDependencies = (
+				D0E78C182639459B00A851B5 /* SDWebImage */,
 			);
 			productName = giphySearch;
 			productReference = D094B68626296F3900A9FA68 /* giphySearch.app */;
@@ -160,6 +163,7 @@
 			);
 			mainGroup = D094B67D26296F3900A9FA68;
 			packageReferences = (
+				D0E78C172639459B00A851B5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = D094B68726296F3900A9FA68 /* Products */;
 			projectDirPath = "";
@@ -343,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y37YL2P5G;
 				INFOPLIST_FILE = giphySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y37YL2P5G;
 				INFOPLIST_FILE = giphySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0E78C172639459B00A851B5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0E78C182639459B00A851B5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E78C172639459B00A851B5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D094B67E26296F3900A9FA68 /* Project object */;
 }

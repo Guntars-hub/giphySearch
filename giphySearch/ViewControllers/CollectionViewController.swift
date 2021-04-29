@@ -34,7 +34,7 @@ class CollectionViewController: UICollectionViewController {
     func setup() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        //Search
+        // Search
         searchBar.searchTextField.delegate = self
         searchBar.searchTextField.placeholder = "Whats your favorite gif?"
         searchBar.returnKeyType = .search
@@ -67,18 +67,17 @@ class CollectionViewController: UICollectionViewController {
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
-        print("\(offsetY), \(contentHeight)")
         
         if offsetY > contentHeight - scrollView.frame.height {
             if !fetchingMore {
-                beginBatchFetch(gifs)
+                beginBatchFetch(gif: gifs)
             }
         }
     }
     
-    func beginBatchFetch(_: [Gif]) {
+    func beginBatchFetch(gif: [Gif]) {
         fetchingMore = true
-        let newItems = self.gifs
+        let newItems = gif
         self.gifs.append(contentsOf: newItems)
         
         self.fetchingMore = false
@@ -96,7 +95,6 @@ extension CollectionViewController: UISearchTextFieldDelegate {
         return true
     }
 }
-
 
 
 

@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
 class GifNetwork {
     let apiKey = "b3yanGY4AmT3AtBM2KeYY25UfSByTv41"
+    
     /**
     Fetches gifs from the Giphy api
     -Parameter searchTerm: What  we should query gifs of.
@@ -22,13 +25,11 @@ class GifNetwork {
             if let err = error {
                 print("Error fetching from Giphy: ", err.localizedDescription)
             }
-            do {
                 // Decode the data into array of Gifs
                 DispatchQueue.main.async {
                     let object = try! JSONDecoder().decode(GifArray.self, from: data!)
                     completion(object)
                 }
-            }
         }.resume()
     }
     /**
