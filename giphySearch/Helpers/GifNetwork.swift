@@ -10,6 +10,7 @@ import UIKit
 
 class GifNetwork {
     let apiKey = "b3yanGY4AmT3AtBM2KeYY25UfSByTv41"
+    private let cache = NSCache<NSString, NSData>()
     
     /**
     Fetches gifs from the Giphy api
@@ -19,6 +20,7 @@ class GifNetwork {
     func fetchGifs(pagination: Bool = false, searchTerm: String, completion: @escaping (_ response: GifArray?) -> Void) {
         // Create a GET url request
         let url = urlBuilder(searchTerm: searchTerm)
+        let cache = NSString(string: try! String(contentsOf: url))
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request) { (data, response, error) in

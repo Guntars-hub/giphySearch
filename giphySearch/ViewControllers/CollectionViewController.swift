@@ -11,7 +11,6 @@ private let reuseIdentifier = "gifCell"
 
 class CollectionViewController: UICollectionViewController {
     var searchBar = UISearchBar()
-    
     var fetchingMore = false
     
     var network = GifNetwork()

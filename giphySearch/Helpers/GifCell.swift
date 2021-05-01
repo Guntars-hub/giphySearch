@@ -10,6 +10,7 @@ class GifCell: UICollectionViewCell {
     /// Gif to be displayed.
     
     @IBOutlet var gifView: UIImageView!
+    var gifURL = String()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -18,7 +19,8 @@ class GifCell: UICollectionViewCell {
     func configure(gif: Gif?) {
         if let gif = gif {
             // Grab gif from gif object and display it inside the imageview
-            let gifURL = gif.getGifURL()
+            gifURL = gif.getGifURL()
+            //print(gifURL)
             gifView.loadGif(url: gifURL)
             gifView.frame = CGRect(origin: .zero, size: bounds.size)
             addSubview(gifView)
